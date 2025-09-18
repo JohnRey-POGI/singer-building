@@ -52,9 +52,9 @@ singer-building/
 ---
 
 ## 🖼️ Screenshots
-- **Desktop**: ![Desktop Screenshot](screenshots\singer-building.local_(Desktop).png)
-- **Tablet (768px)**: ![Tablet Screenshot](screenshots\singer-building.local_(Tablet).png)
-- **Mobile (360px)**: ![Mobile Screenshot](screenshots\singer-building.local_(Mobile).png)
+- **Desktop**: ![Desktop Screenshot](https://github.com/JohnRey-POGI/singer-building/blob/main/screenshots/singer-building.local_(Desktop).png)
+- **Tablet (768px)**: ![Tablet Screenshot](https://github.com/JohnRey-POGI/singer-building/blob/main/screenshots/singer-building.local_(Tablet).png)
+- **Mobile (360px)**: ![Mobile Screenshot](https://github.com/JohnRey-POGI/singer-building/blob/main/screenshots/singer-building.local_(Mobile).png)
 
 ---
 
