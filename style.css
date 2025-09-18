@@ -1,0 +1,242 @@
+/*
+Theme Name: Singer Building
+Template: twentytwentyfour
+Version: 1.0
+*/
+
+/* ==========================
+   Base Styles (Mobile First)
+   360px
+   ========================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+#header {
+  position: absolute;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #headerimg{
+  width: 120px;   /* default logo size (desktop) */
+  height: 50px;   /* controls logo height */
+  background-image: url('logo/Logo\ Light.svg');
+  background-repeat: no-repeat; /* or repeat, repeat-x, repeat-y */
+  background-position: center; /* or specific coordinates */
+}
+#header #headerimg a{
+  text-decoration: unset;
+  color: transparent;
+}
+#page hr {
+  display: none;
+}
+
+/* ----- Hero ----- */
+.hero {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+.hero h1 {
+  font-size: 1.8rem;
+}
+
+/* ----- Why ----- *//* Why Section - Mobile First */
+.why {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  text-align: center;       /* center text */
+  padding: 40px 0px;
+}
+
+.why-text {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.why img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px; /* add spacing below text */
+  object-fit: cover;
+}
+
+/* ----- Portfolio ----- */
+.portfolio h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.portfolio-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -8px 3px 11px rgba(0, 0, 0, 0.3);
+}
+.portfolio-item h3 {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* EXPERIENCE SECTION */
+.experience {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Text container */
+.experience-text {
+  background: rgba(0, 0, 0, 0.5); /* makes text readable */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;        /* full width by default (mobile/tablet) */
+  max-width: none;
+  text-align: center; /* center text on mobile */
+}
+
+.experience-text h2, .experience-text p {
+  color: white;
+  padding: 40px;
+}
+
+/* ----- Contact ----- */
+.contact {
+  background: #f8f8f8;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact p {
+  margin: 0.5rem 0;
+}
+
+
+/* ==========================
+   Tablet Styles
+   ≥768px
+   ========================== */
+@media (min-width: 768px) {
+  #header {
+    padding: 15px 20px;
+  }
+  #header #headerimg {
+    width: 80px;
+    height: 30px;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .why {
+    flex-direction: row;         /* side by side */
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    text-align: left;
+  }
+
+  .why-text,
+  .why-image {
+    flex: 1;                     /* equal width */
+  }
+
+  .why-text {
+    padding: 40px;
+  }
+
+  .why-image {
+    display: flex;
+    justify-content: flex-end;   /* push image fully right */
+  }
+
+  .why-image img {
+    width: 100%;
+    height: auto;
+    margin: 0;                   /* remove right margin */
+    object-fit: cover;
+  }
+  .portfolio h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .experience-text {
+    width: 50%;         /* take half of the section */
+    text-align: left;   /* align left on desktop */
+  }
+}
+
+
+/* ==========================
+   Desktop Styles
+   ≥1200px
+   ========================== */
+@media (min-width: 1200px) {
+  #header #headerimg {
+    width: 100px;
+    height: 40px;
+  }
+  .hero {
+    min-height: 50vh;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .why-text {
+    font-size: 1.2rem;
+    padding: 80px;
+  }
+
+  .portfolio-items {
+    grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+  }
+  
+  .experience {
+    justify-content: flex-start;
+    padding: 60px;
+    min-height: 50vh;
+  }
+  .experience-text {
+    width: 50%;         /* take half of the section */
+    text-align: left;   /* align left on desktop */
+  }
+
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+}
